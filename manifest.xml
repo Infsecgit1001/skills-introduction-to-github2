@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" 
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+           xsi:type="MessageReadCommandSurface">
+    <Id>your-unique-id</Id>
+    <Version>1.0</Version>
+    <ProviderName>GM Sec Tools</ProviderName>
+    <DefaultLocale>en-US</DefaultLocale>
+    <DisplayName>Confidential Attachment Checker</DisplayName>
+    <Description>Warns users when attaching confidential files</Description>
+    
+    <Hosts>
+        <Host Name="Mailbox"/>
+    </Hosts>
+
+    <Requirements>
+        <Sets DefaultMinVersion="1.1">
+            <Set Name="Mailbox"/>
+        </Sets>
+    </Requirements>
+
+    <FormSettings>
+        <Form xsi:type="ItemRead">
+            <FunctionFile resid="functionFile"/>
+        </Form>
+    </FormSettings>
+
+    <Runtimes>
+        <Runtime resid="functionFile" src="https://your-server.com/index.html"/>
+    </Runtimes>
+
+</OfficeApp>
