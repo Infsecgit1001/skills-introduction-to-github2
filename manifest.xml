@@ -26,7 +26,7 @@
     </FormSettings>
 
     <Runtimes>
-        <Runtime resid="functionFile" src="https://your-server.com/index.html"/>
+        <Runtime resid="functionFile" src="https://infsecgit1001.github.io/skills-introduction-to-github2/myscript.js"/>
     </Runtimes>
 
 </OfficeApp>
